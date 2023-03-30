@@ -1,0 +1,20 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/go
+{
+	"name": "Go",
+    "dockerFile": "Dockerfile",
+    "extensions": [
+        "mhutchie.git-graph",
+        "whensunset.chatgpt-china",
+        "cweijan.vscode-mysql-client2",
+        "gruntfuggly.todo-tree",
+        "TabNine.tabnine-vscode",
+        "formulahendry.code-runner",
+        "golang.go",
+        "premparihar.gotestex",
+    ],
+    "settings": {
+        "go.useLanguageServer": true
+    },
+    "postCreateCommand": "go mod download"
+}
